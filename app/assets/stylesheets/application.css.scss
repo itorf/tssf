@@ -1,0 +1,112 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+* {
+	list-style-type: none;
+}
+
+/*Navbar*/
+
+.navbar {
+	border: darkgray;
+	padding: 0;
+	background-color: darkgray;
+}
+
+.navbar-default a.navbar-brand {
+	color: black;
+}
+
+button.navbar-toggle.collapsed {
+	border-color: black;
+	color: black;
+	background-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #009900;
+}
+
+.navbar-collapse {
+	margin-top: 0;
+	background-color: lightgray;
+}
+
+.navbar-nav {
+	margin: 0;
+}
+
+#bs-example-navbar-collapse-1 {
+	padding: 0;
+}
+
+li > a {
+	border-bottom: 1px solid white;
+	padding: 2%;
+	position: relative;
+	height: 100%;
+}
+.navbar-default .navbar-nav > li > a {
+	color: black;
+}
+
+ul.navbar-nav > li {
+	border: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: #009900;
+	color: white;
+}
+
+/*Main Ad - mobile*/
+
+.main-ad {
+	background-color: black;
+	overflow: auto;
+}
+
+#mainAd {
+	padding: 2%;
+	float: left;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.ad-desc {
+	color: #FFDE5C;
+	margin: 5% auto;
+	text-align: center;
+}
+
+.ad-button {
+	background-color: #009900;
+	color: black;
+	border-color: #009900;
+	padding: 1%;
+	margin: 1%;
+	min-width: 109px;
+}
+
+.ad-button:hover {
+	background-color: #007A00;
+	border-color: black;
+}
