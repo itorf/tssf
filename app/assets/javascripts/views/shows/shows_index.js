@@ -1,12 +1,11 @@
 TSSF.Views.ShowsIndex = Backbone.View.extend({
 	template: JST["shows/index"],
 	
-	initiailize: function () {
+	initialize: function () {
 		this.listenTo(this.collection, "sync", this.render);
 	},
 	
 	render: function () {
-		debugger
 		var renderedContent = this.template({
 			shows: this.collection
 		})

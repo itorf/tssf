@@ -23,10 +23,15 @@
 
 /*Navbar*/
 
+img#brand {
+	position: relative;
+	top: -10px;
+}
+
 .navbar {
-	border: darkgray;
+	border: lightgray;
 	padding: 0;
-	background-color: darkgray;
+	background-color: black;
 }
 
 .navbar-default a.navbar-brand {
@@ -93,20 +98,52 @@ ul.navbar-nav > li {
 
 .ad-desc {
 	color: #FFDE5C;
-	margin: 5% auto;
+	margin: 0 auto;
 	text-align: center;
+}
+
+.ad-desc > h6, h5 {
+	margin: 1%;
 }
 
 .ad-button {
 	background-color: #009900;
-	color: black;
+	color: white;
 	border-color: #009900;
-	padding: 1%;
+/*	padding: 1%;*/
 	margin: 1%;
 	min-width: 109px;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .ad-button:hover {
 	background-color: #007A00;
 	border-color: black;
+	color: lightgray;
+}
+
+/*.fadein { position:relative; height:100%; width:100%; }
+.fadein img { position:absolute; left:0; top:0; }*/
+
+/*table*/
+
+table {
+	height: 300px;
+}
+
+tr {
+	width: 100%;
+	display: inline-table;
+}
+
+tbody {
+	overflow-y: scroll;
+	height: 200px;
+	position: absolute;
+	width: 100%;
+}
+
+td, th {
+	width: 25%;
 }

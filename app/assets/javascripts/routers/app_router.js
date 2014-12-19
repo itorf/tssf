@@ -10,7 +10,6 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 	home: function () {
 
 		TSSF.Shows.fetch();
-		debugger
 		var showsIndex = new TSSF.Views.ShowsIndex({
 			collection: TSSF.Shows
 		})

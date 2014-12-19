@@ -1,0 +1,18 @@
+<div class="fadein">
+	<img src="assets/ryanFlip.jpg" class="img-responsive">
+	<img src="assets/parker4.jpg" class="img-responsive">
+	<img src="assets/fullband1.jpg" class="img-responsive">
+</div>
+
+<script>
+	$(function () {
+		$('.fadein img:gt(0)').hide();
+		
+		setInterval(function () {
+			$('.fadein :first-child').fadeOut(function () {
+				$('.fadein :first-child').next('img').fadeIn().end().appendTo('.fadein');
+			});
+		}, 5000);
+	});	
+</script>
+	

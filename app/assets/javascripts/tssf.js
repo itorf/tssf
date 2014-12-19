@@ -5,7 +5,7 @@ window.TSSF = {
 	Routers: {},
 	initialize: function () {
 		
-		TSSF.Shows = new TSSF.Collections.Shows
+		TSSF.Shows = new TSSF.Collections.Shows;
 		
 		new TSSF.Routers.AppRouter({
 			"$rootEl": $('#main')

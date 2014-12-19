@@ -1,9 +1,36 @@
-Whassup
-<% shows.forEach(function (show) { %>
-	<%= show.escape('date') %>
-	<br>
-	<%= show.escape('venue') %>
-	<br>
-	<%= show.escape('city') %>
-	<br>
-<% }) %>
+<table class="table table-bordered table-striped header-fixed" id="show-dates">
+	<thead>
+		<tr>
+			<th colspan="4">Upcoming Shows</th>
+		</tr>
+		<tr>
+			<th>Date</th>
+			<th>Venue</th>
+			<th>Location</th>
+			<th>Tickets</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% shows.forEach(function (show) { %>
+			<tr>
+				<td><%= show.escape('date') %></td>
+				<td><%= show.escape('venue') %></td>
+				<td><%= show.escape('city') %>, <%= show.escape('state') %></td>
+				<td>
+					<form action=""></form>
+					<button type="button" class="btn btn-xs" 									onclick="handleTickets('<%= show.escape('tickets_url') %>');">
+						Buy Tickets
+					</button>
+				</td>
+			</tr>
+		<% }) %>
+		<tr><td colspan="4">More Shows...</td></tr>
+	</tbody>
+</table>
+
+<script>
+	var handleTickets = function (url) {
+		var win = window.open(url, '_blank');
+		win.focus();
+	}
+</script>
