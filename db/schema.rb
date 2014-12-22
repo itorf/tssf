@@ -13,6 +13,13 @@
 
 ActiveRecord::Schema.define(version: 20141219032413) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "number_tbl", id: false, force: true do |t|
+    t.integer "val", limit: 2
+  end
+
   create_table "posts", force: true do |t|
     t.string   "title",      null: false
     t.text     "body",       null: false
