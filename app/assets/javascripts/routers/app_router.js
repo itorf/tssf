@@ -16,11 +16,18 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		var showsIndex = new TSSF.Views.ShowsIndex({
 			collection: TSSF.Shows
 		});
+		var banner = new TSSF.Views.Banner();
+		var ad = new TSSF.Views.Ad();
+		var merch = new TSSF.Views.Merch();
 		
 		home.addSubview('.shows', showsIndex);
+		home.addSubview('.banner', banner);
+		home.addSubview('.ad', ad);
+		home.addSubview('.merch', merch);
 		
-		this.$rootEl.html(home.render().$el);
-	
+		this._swapView(home);
+		
+		bannerFade.startFade();
 	},
 	
 	shows: function () {
@@ -29,6 +36,15 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 			collection: TSSF.Shows
 		});
 		
-		this.$rootEl.html(showsIndex.render().$el);
+		this._swapView(showsIndex);
+	},
+	
+	_swapView: function (newView) {
+		this._currentView && this._currentView.remove();
+		this._currentView = newView;
+		this.$rootEl.html(newView.render().$el);
+		
+		$('#bs-example-navbar-collapse-1').removeClass('in');
+		bannerFade.stopFade();
 	}
 })
