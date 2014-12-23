@@ -1,4 +1,4 @@
-TSSF.Views.ShowsIndex = Backbone.View.extend({
+TSSF.Views.ShowsIndex = Backbone.CompositeView.extend({
 	template: JST["shows/index"],
 	
 	initialize: function () {
