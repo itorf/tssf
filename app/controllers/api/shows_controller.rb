@@ -2,7 +2,7 @@ module Api
   class ShowsController < ApplicationController
   
     def index
-      @shows = Show.all
+      @shows = Show.order(:date)
       render json: @shows
     end
   
