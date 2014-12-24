@@ -44,7 +44,8 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		this._currentView = newView;
 		this.$rootEl.html(newView.render().$el);
 		
-		$('#bs-example-navbar-collapse-1').removeClass('in');
+		// $('#bs-example-navbar-collapse-1').collapse('toggle');
+		checkCollapse('#bs-example-navbar-collapse-1');
 		bannerFade.stopFade();
 	}
 })
