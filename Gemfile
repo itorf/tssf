@@ -27,6 +27,7 @@ gem 'backbone-on-rails'
 gem 'underscore-rails'
 
 gem 'newrelic_rpm'
+gem 'kaminari'
 
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

@@ -18,19 +18,12 @@
 				<td><%= show.escape('city') %>, <%= show.escape('state') %></td>
 				<td>
 					<form action=""></form>
-					<button type="button" class="btn btn-xs" 									onclick="handleTickets('<%= show.escape('tickets_url') %>');">
+					<button type="button" class="btn btn-xs tix" data-url='<%= show.escape('tickets_url') %>'>
 						Buy Tickets
 					</button>
 				</td>
 			</tr>
 		<% }) %>
-		<tr><td colspan="4"><button class="btn btn-sm">More</button></td></tr>
+		<tr><td colspan="4"><button class="btn btn-sm more-shows">Show More</button></td></tr>
 	</tbody>
 </table>
-
-<script>
-	var handleTickets = function (url) {
-		var win = window.open(url, '_blank');
-		win.focus();
-	}
-</script>

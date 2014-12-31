@@ -1,5 +1,6 @@
 TSSF.Routers.AppRouter = Backbone.Router.extend({
 	routes: {
+		"": "home",
 		"home": "home",
 		"shows": "shows"
 	},
@@ -10,7 +11,10 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 	
 	home: function () {
 
-		TSSF.Shows.fetch();
+		TSSF.Shows.fetch({
+			remove: false,
+			data: { page: 1 },
+		});
 		var home = new TSSF.Views.HomeView();
 		
 		var showsIndex = new TSSF.Views.ShowsIndex({
@@ -31,7 +35,10 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 	},
 	
 	shows: function () {
-		TSSF.Shows.fetch();
+		TSSF.Shows.fetch({
+			remove: false,
+			data: { page: 1 },
+		});
 		var showsIndex = new TSSF.Views.ShowsIndex({
 			collection: TSSF.Shows
 		});
