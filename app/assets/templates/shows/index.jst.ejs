@@ -13,7 +13,9 @@
 	<tbody>
 		<% shows.forEach(function (show) { %>
 			<tr>
-				<td><%= show.escape('date') %></td>
+				<td>
+					<%= show.escape('date') %>
+				</td>
 				<td><%= show.escape('venue') %></td>
 				<td><%= show.escape('city') %>, <%= show.escape('state') %></td>
 				<td>
