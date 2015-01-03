@@ -2,7 +2,10 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 	routes: {
 		"": "home",
 		"home": "home",
-		"shows": "shows"
+		"shows": "shows",
+		"videos": "videos",
+		"contact": "contact",
+		"about": "about"
 	},
 	
 	initialize: function (options) {
@@ -44,6 +47,21 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		});
 		
 		this._swapView(showsIndex);
+	},
+	
+	videos: function () {
+		var videosView = new TSSF.Views.VideosView();
+		this._swapView(videosView);
+	},
+	
+	contact: function () {
+		var contactView = new TSSF.Views.ContactView();
+		this._swapView(contactView);
+	},
+	
+	about: function () {
+		var aboutView = new TSSF.Views.AboutView();
+		this._swapView(aboutView);
 	},
 	
 	_swapView: function (newView) {
