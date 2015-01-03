@@ -27,7 +27,7 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		home.addSubview('.shows', showsIndex);
 		home.addSubview('.banner', banner);
 		home.addSubview('.ad', ad);
-		home.addSubview('.merch', merch);
+		// home.addSubview('.merch', merch);
 		
 		this._swapView(home);
 		

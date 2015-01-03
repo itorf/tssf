@@ -15,8 +15,6 @@ window.TSSF = {
 	}
 };
 
-
-
 var bannerFade = {
 	startFade: function () {
 		$('.fadein img:gt(0)').hide();

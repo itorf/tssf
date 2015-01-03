@@ -1,0 +1,20 @@
+<td class="show-date">
+	<div class="month"><%= month %></div>
+	<div class="date"><%= date %></div>
+	<div class="day"><%= day %></div>
+	
+</td>
+<td>
+	<button type="button" class="btn btn-sm tix" data-url='<%= show.escape('tickets_url') %>'>
+		Buy Tickets
+	</button>
+	<div class="location">
+		<%= show.escape('city') %>, <%= show.escape('state') %>
+	</div> 
+	<div class="venue">
+		<%= show.escape('venue') %>
+	</div> 
+	<div class="full-date">
+		<%= month.slice(0, 3) %>. <%= date %>, <%= year %>
+	</div>
+</td>

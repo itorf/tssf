@@ -2,7 +2,7 @@ module Api
   class ShowsController < ApplicationController
   
     def index
-      @shows = Show.order(:date).page(params[:page]).per(2)
+      @shows = Show.order(:date).page(params[:page]).per(4)
       render :json => {
         :models => @shows,
         :page => params[:page],

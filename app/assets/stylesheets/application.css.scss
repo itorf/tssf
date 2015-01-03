@@ -129,7 +129,8 @@ ul.navbar-nav > li {
 /*table*/
 
 table {
-	height: 400px;
+	height: 100%;
+	border-color: #009900;
 }
 
 tr {
@@ -137,13 +138,98 @@ tr {
 	display: inline-table;
 }
 
-/*tbody {
-	overflow-y: scroll;
-	height: 325px;
-	position: absolute;
-	width: 100%;
-}*/
+#show-dates {
+	thead {
+		background-color: #009900;
+		border-bottom: 0px;
+		color: black;
+	}
+	
+	th {
+		border: 0;
+	}
+	
+	tr {
+		border-color: #009900;
+	}
+	
+	tfoot {
+		background-color: black;
+	}
+}
 
-td, th {
+table#show-dates.table {
+	margin: 0;
+}
+
+.show-item {
+	background-color: black;
+	color: #D8D8D8;
+	
+	.venue {
+		font-size: 14px;
+		color: #6C6C6C;
+	}
+	
+	.full-date {
+		font-size: 12px;
+		color: #6C6C6C;
+	}
+}
+
+.table > tbody > tr > td.show-date {
 	width: 25%;
+	text-align: center;
+	padding: 4px;
+	color: #009900;
+	
+	div.date {
+		font-size: 30px;
+	}
+	
+	div.month {
+		font-size: 14px;
+	}
+	
+	div.day {
+		font-size: 12px;
+		padding: 0;
+	}
+}
+
+.table > tbody > tr > td {
+	border-top: 0;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 12px;
+}
+
+.location {
+	font-size: 16px;
+}
+
+.table > tbody:first-child {
+	border-top: 0;
+}
+
+button.btn.btn-sm.tix {
+	float: right;
+	position: relative;
+	top: 15px;
+	background-color: #009900;
+	color: #D8D8D8;
+}
+
+button.btn.btn-sm.more-shows {
+	background-color: white;
+	position: relative;
+	left: 10px;
+}
+/*footer*/
+div.footer {
+	font-size: 10px;
+	background-color: black;
+	padding: 1%;
+	color: #A7A7A7;
+	text-align: center;
+	border-top: 1px solid #A7A7A7;
 }

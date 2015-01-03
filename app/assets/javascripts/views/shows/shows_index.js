@@ -4,11 +4,19 @@ TSSF.Views.ShowsIndex = Backbone.CompositeView.extend({
 	initialize: function () {
 		this.listenTo(this.collection, "sync", this.render);
 		this.listenTo(this.collection, "sync", this.disableMore);
+		this.listenTo(this.collection, "add", this.addShowItem)
 	},
 	
 	events: {
 		'click .more-shows': 'loadMoreShows',
 		'click .tix': 'navToTickets'
+	},
+	
+	addShowItem: function (show) {
+		var showItem = new TSSF.Views.ShowItem ({
+			model: show
+		});
+		this.addSubview('tbody.shows', showItem);
 	},
 
 	loadMoreShows: function () {
@@ -46,6 +54,9 @@ TSSF.Views.ShowsIndex = Backbone.CompositeView.extend({
 			totalPages: this.collection.total_pages
 		})
 		this.$el.html(renderedContent);
+		this._subviews = {};
+		this.collection.each(this.addShowItem.bind(this))
+		this.renderSubviews();
 		return this;
 	}
 });
