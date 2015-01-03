@@ -5,7 +5,8 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		"shows": "shows",
 		"videos": "videos",
 		"contact": "contact",
-		"about": "about"
+		"about": "about",
+		"music": "music"
 	},
 	
 	initialize: function (options) {
@@ -20,20 +21,7 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 		});
 		var home = new TSSF.Views.HomeView();
 		
-		var showsIndex = new TSSF.Views.ShowsIndex({
-			collection: TSSF.Shows
-		});
-		var banner = new TSSF.Views.Banner();
-		var ad = new TSSF.Views.Ad();
-		var merch = new TSSF.Views.Merch();
-		
-		home.addSubview('.shows', showsIndex);
-		home.addSubview('.banner', banner);
-		home.addSubview('.ad', ad);
-		// home.addSubview('.merch', merch);
-		
 		this._swapView(home);
-		
 		bannerFade.startFade();
 	},
 	
@@ -62,6 +50,11 @@ TSSF.Routers.AppRouter = Backbone.Router.extend({
 	about: function () {
 		var aboutView = new TSSF.Views.AboutView();
 		this._swapView(aboutView);
+	},
+	
+	music: function () {
+		var musicView = new TSSF.Views.MusicView();
+		this._swapView(musicView);
 	},
 	
 	_swapView: function (newView) {

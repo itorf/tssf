@@ -162,21 +162,6 @@ table#show-dates.table {
 	margin: 0;
 }
 
-.show-item {
-	background-color: black;
-	color: #D8D8D8;
-	
-	.venue {
-		font-size: 14px;
-		color: #6C6C6C;
-	}
-	
-	.full-date {
-		font-size: 12px;
-		color: #6C6C6C;
-	}
-}
-
 .table > tbody > tr > td.show-date {
 	width: 25%;
 	text-align: center;
@@ -203,12 +188,38 @@ table#show-dates.table {
 	padding-top: 12px;
 }
 
-.location {
-	font-size: 16px;
-}
-
 .table > tbody:first-child {
 	border-top: 0;
+}
+
+button.btn.btn-sm.more-shows {
+	background-color: white;
+	float: right;
+}
+
+/*show item */
+
+table.table {
+	margin: 0;
+}
+
+.show-item {
+	background-color: black;
+	color: #D8D8D8;
+	
+	.venue {
+		font-size: 14px;
+		color: #6C6C6C;
+	}
+	
+	.full-date {
+		font-size: 12px;
+		color: #6C6C6C;
+	}
+}
+
+.location {
+	font-size: 16px;
 }
 
 button.btn.btn-sm.tix {
@@ -219,10 +230,6 @@ button.btn.btn-sm.tix {
 	color: #D8D8D8;
 }
 
-button.btn.btn-sm.more-shows {
-	background-color: white;
-	float: right;
-}
 /*footer*/
 div.footer {
 	font-size: 10px;
@@ -237,7 +244,7 @@ div.footer {
 
 td {
 	background-color: black;
-	iframe {
+	iframe.youtube {
 		display: block;
 		margin: 0 auto;
 		max-width: 336px;
@@ -307,11 +314,27 @@ table#about.table {
 	}
 }
 
-/*practice*/
+/*music */ 
 
-.practice {
+iframe.soundcloud {
+	width: 100%;
+	height: 225px;
+	padding: 2%;
+}
+
+/*general header/body */
+
+.page-head {
 	background-color: #009900;
 	color: black;
 	font-weight: bold;
 	padding: 2%;
+	
+	a {
+		color: black;
+	}	
+}
+
+.page-body {
+	background-color: black;
 }
