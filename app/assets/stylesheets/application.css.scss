@@ -21,6 +21,9 @@
 	list-style-type: none;
 }
 
+body {
+	background-color: darkgray;
+}
 /*Navbar*/
 
 img#brand {
@@ -78,6 +81,29 @@ ul.navbar-nav > li {
 .navbar-default .navbar-nav > li > a:hover {
 	background-color: #009900;
 	color: white;
+}
+
+@media (min-width: 0px) {
+	.outer-container {
+		padding: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-collapse {
+		background-color: black;
+		float: right;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: white;
+	}
+	
+	.outer-container {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		background-color: lightgray;
+	}
 }
 
 /*Main Ad - mobile*/
