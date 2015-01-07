@@ -1,0 +1,57 @@
+@media (min-width: 992px) {
+	
+	.navbar-default .navbar-nav > li > a {
+		color: white;
+	}
+	
+	ul.nav.navbar.nav {
+		background-color: black;
+	}
+	
+	.outer-container {
+		margin-bottom: 5%;
+		background-color: lightgray;
+	}
+	
+	div.social-media {
+		width: 500px;
+		height: 30px;
+/*		float: right;*/
+	}
+	
+	span.sm-fb {
+		background-image: url("fb-icon.png");
+		display: inline;
+		width: 100%;
+		height: 100%;
+		float: right;
+		background-repeat: no-repeat;
+	}
+	
+	span.sm-tw {
+		background-image: url("twitter-icon.png");
+		display: inline;
+		width: 100%;
+		height: 100%;
+		float: right;
+		background-repeat: no-repeat;
+	}
+	
+	span.sm-yt {
+		background-image: url("youtube-icon.png");
+		display: inline;
+		width: 100%;
+		height: 100%;
+		float: right;
+		background-repeat: no-repeat;
+	}
+	
+	span.sm-tu {
+		background-image: url("tumblr-icon.png");
+		display: inline;
+		width: 100%;
+		height: 100%;
+		float: right;
+		background-repeat: no-repeat;
+	}
+}
