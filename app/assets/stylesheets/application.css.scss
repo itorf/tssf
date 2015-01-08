@@ -169,6 +169,80 @@ iframe.soundcloud {
 	padding: 2%;
 }
 
+/*Videos*/
+
+td {
+	background-color: black;
+	iframe.youtube {
+		display: block;
+		margin: 0 auto;
+		max-width: 336px;
+		max-height: 189px;
+	}
+}
+
+table#videos.table {
+	margin: 0;
+
+	thead > tr > th {
+		background-color: #009900;
+		border-bottom: 0;
+	}
+}
+
+tbody.vids > tr > td {
+	border: 1px solid black;
+}
+
+/*Contact*/
+table#contact.table {
+	margin: 0;
+	color: white;
+
+	a {
+		color: white;
+	}
+
+	h4 {
+		color: #009900;
+	}
+
+	p {
+		text-indent: 3%;
+	}
+
+	thead > tr > th {
+		color: black;
+		background-color: #009900;
+		border-bottom: 0;
+	}
+}
+
+/*about*/
+table#about.table {
+	margin: 0;
+	color: white;
+
+	a {
+		color: white;
+	}
+
+	h4 {
+		color: #009900;
+	}
+
+	p {
+		text-indent: 3%;
+		margin: 3%;
+	}
+
+	thead > tr > th {
+		color: black;
+		background-color: #009900;
+		border-bottom: 0;
+	}
+}
+
 /*general header/body */
 
 .page-head {
