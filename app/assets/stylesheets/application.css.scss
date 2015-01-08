@@ -161,7 +161,31 @@ button.btn.btn-sm.more-shows {
 	color: lightgray;
 }
 
+/*music */ 
 
+iframe.soundcloud {
+	width: 100%;
+	height: 225px;
+	padding: 2%;
+}
+
+/*general header/body */
+
+.page-head {
+	background-color: #009900;
+	color: black;
+	font-weight: bold;
+	padding: 2%;
+
+	a {
+		color: black;
+	}	
+}
+
+.page-body {
+	background-color: black;
+/*	padding: 2%;*/
+}
 
 /*footer*/
 div.footer {
