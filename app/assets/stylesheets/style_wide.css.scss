@@ -73,10 +73,55 @@
 		
 		h1 {
 			font-family: "Comic Sans MS", cursive, sans-serif;	
-			font-size: 9vw;
+			font-size: 4vw;
 			color: white;
 			background-color: black;
-			text-align: center;
+			float: left;
+			display: inline-block;
+			margin: 1%;
+		}
+		
+		ul.nav.navbar-nav {
+			float: right;
+			
+			a {
+			 color: white;	
+			}
+			
+			a:hover {
+				background-color: #009900;
+			}
 		}
 	}
+	
+/*	wide-banner*/
+	
+	.banner {
+		div {
+			width: 100%;	
+		}
+	}
+	
+	.wide-banner {
+		margin: auto;
+		width: 100%;
+		padding: 1%;
+		
+		img {
+			max-width: 400px;
+			float: left;
+		}
+	}
+}
+
+/*general*/
+
+.page-head {
+	background-color: black;
+	font-weight: bold;
+	padding: 2%;
+
+	a {
+		color: #009900;
+	}	
 }
