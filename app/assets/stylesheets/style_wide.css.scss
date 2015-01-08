@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	
 	.navbar-default .navbar-nav > li > a {
 		color: white;
@@ -9,49 +9,71 @@
 	}
 	
 	.outer-container {
-		margin-bottom: 5%;
-		background-color: lightgray;
+/*		margin-bottom: 5%;*/
+		background-color: black;
+		padding: 0;
 	}
 	
-	div.social-media {
-		width: 500px;
-		height: 30px;
-/*		float: right;*/
-	}
+/*	top-panel*/
 	
-	span.sm-fb {
-		background-image: url("fb-icon.png");
-		display: inline;
-		width: 100%;
+	div.top-panel {
 		height: 100%;
-		float: right;
-		background-repeat: no-repeat;
+		width: 100%;
+		background-color: black;
+		
+		.social-media {
+			height: 100%;
+			float: right;
+			padding: 5px;
+	
+			span {
+				background-repeat: no-repeat;
+				height: 25px;
+				width: 25px;
+				display: block;
+				float: left;
+			}
+		
+			.fb-icon {
+				background-image: url("fb-icon.png");
+			}
+	
+			.tw-icon {
+				background-image: url("twitter-icon.png");
+			}
+	
+			.yt-icon {
+				background-image: url("youtube-icon.png");
+			}
+	
+			.tu-icon {
+						background-image: url("tumblr-icon.png");
+			}
+		}
+		
+		audio {
+			height: 30px;
+		}	
+		
+		div.sign-in {
+			float: right;
+			padding: 7px;
+			color: #009900;
+			
+			a {
+				color: #009900;
+			}
+		}
 	}
 	
-	span.sm-tw {
-		background-image: url("twitter-icon.png");
-		display: inline;
-		width: 100%;
-		height: 100%;
-		float: right;
-		background-repeat: no-repeat;
-	}
-	
-	span.sm-yt {
-		background-image: url("youtube-icon.png");
-		display: inline;
-		width: 100%;
-		height: 100%;
-		float: right;
-		background-repeat: no-repeat;
-	}
-	
-	span.sm-tu {
-		background-image: url("tumblr-icon.png");
-		display: inline;
-		width: 100%;
-		height: 100%;
-		float: right;
-		background-repeat: no-repeat;
+	div.main-sign {
+		
+		h1 {
+			font-family: "Comic Sans MS", cursive, sans-serif;	
+			font-size: 9vw;
+			color: white;
+			background-color: black;
+			text-align: center;
+		}
 	}
 }
