@@ -46,3 +46,10 @@ $('html').click(function (){
 $('#bs-example-navbar-collapse-1').click(function (event) {
 	event.stopPropagation();
 });
+
+$('ul.nav.navbar-nav').on('hover', function (event)	{
+	debugger
+	console.log(this);
+	$target = $(event.target);
+	$target.addClass("active");
+});

@@ -165,8 +165,8 @@ button.btn.btn-sm.more-shows {
 
 iframe.soundcloud {
 	width: 100%;
-	height: 225px;
-	padding: 2%;
+	height: 166px;
+	margin: 1%;
 }
 
 /*Videos*/
@@ -175,7 +175,7 @@ td {
 	background-color: black;
 	iframe.youtube {
 		display: block;
-		margin: 0 auto;
+		margin: 10px auto;
 		max-width: 336px;
 		max-height: 189px;
 	}
@@ -243,13 +243,38 @@ table#about.table {
 	}
 }
 
+/*music*/
+table#music.table {
+	margin: 0;
+	color: white;
+
+	a {
+		color: white;
+	}
+
+	h4 {
+		color: #009900;
+	}
+
+	p {
+		text-indent: 3%;
+		margin: 3%;
+	}
+
+	thead > tr > th {
+		color: black;
+		background-color: #009900;
+		border-bottom: 0;
+	}
+}
+
 /*general header/body */
 
 .page-head {
 	background-color: #009900;
 	color: black;
 	font-weight: bold;
-	padding: 2%;
+	padding: 2%
 
 	a {
 		color: black;
